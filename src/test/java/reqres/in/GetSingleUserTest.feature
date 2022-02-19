@@ -1,4 +1,4 @@
-Feature: Get Single User API
+Feature: Get Single User
 
   Background:
     * url 'https://reqres.in/api'
