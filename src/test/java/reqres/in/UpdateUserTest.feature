@@ -1,10 +1,10 @@
-Feature: Update API Test Cases
+Feature: Update User
 
   Background:
     * url 'https://reqres.in/api'
     * header Accept = 'application/json'
-    * def requestJson = read("CreateUserRequest.json)
-    * def responseJson = read("CreateUserResponse.json")
+    * def requestJson = read('CreateUserRequest.json')
+    * def responseJson = read('CreateUserResponse.json')
 
 
   Scenario: Update User API

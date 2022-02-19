@@ -5,14 +5,14 @@ import com.intuit.karate.junit5.Karate;
 public class ApiTestRunner {
     @Karate.Test
     public Karate runFeatures() {
-        String projectHomeDirectory = System.getProperty("user.dir");
-        String pathFromContent = "/src/test/java/reqres/in/";
-        String featureFiles = projectHomeDirectory + pathFromContent + "CreateUserTest.feature" + "," +
-                projectHomeDirectory + pathFromContent + "UpdateUserTest.feature" + ", " +
-                projectHomeDirectory + pathFromContent + "GetSingleUserTest.feature" + ", " +
-                projectHomeDirectory + pathFromContent + "GetListUsersTest.feature" + ", " +
-                projectHomeDirectory + pathFromContent + "DeleteUserTest.feature";
+        String pathFromContent = System.getProperty("user.dir") + "/src/test/java/reqres/in/";
 
-        return Karate.run(featureFiles);
+        return Karate.run(pathFromContent + "CreateUserTest.feature",
+                pathFromContent + "UpdateUserTest.feature",
+                pathFromContent + "GetListUsersTest.feature",
+                pathFromContent + "GetListUsersTest.feature",
+                pathFromContent + "GetSingleUserTest.feature",
+                pathFromContent + "DeleteUserTest.feature"
+        );
     }
 }

@@ -1,4 +1,4 @@
-Feature: Delete Feature Test Cases
+Feature: Delete User
 
   Scenario: Delete User
     Given url 'https://reqres.in/api/users/2'

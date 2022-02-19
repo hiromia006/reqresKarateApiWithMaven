@@ -1,10 +1,10 @@
-Feature: Create User POST API
+Feature: Create User
 
   Background:
     * url 'https://reqres.in/api'
     * header Accept = 'application/json'
-    * def requestJson = read("CreateUserRequest.json)
-    * def responseJson = read("CreateUserResponse.json")
+    * def requestJson = read('CreateUserRequest.json')
+    * def responseJson = read('CreateUserResponse.json')
 
   Scenario: Create a  User
     Given path '/user'

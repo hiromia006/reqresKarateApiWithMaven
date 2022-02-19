@@ -1,4 +1,4 @@
-Feature: Get List users API
+Feature: Get List Users
 
   Background:
     * url 'https://reqres.in/api'

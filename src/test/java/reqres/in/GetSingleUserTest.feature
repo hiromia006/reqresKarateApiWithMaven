@@ -27,5 +27,5 @@ Feature: Get Single User API
     When method get
     Then status 200
     And print response
-    And match response.data.last_name!= null
+    And match response.data.last_name != null
     And assert response.data.id == 2
